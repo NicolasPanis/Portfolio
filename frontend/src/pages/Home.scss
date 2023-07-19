@@ -1,0 +1,172 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.Main {
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 900px;
+  margin-bottom: 600px;
+  letter-spacing: -0.5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(30px, 4vw, 25rem);
+  font-weight: 200;
+}
+
+.title h2 {
+  font-size: clamp(30px, 4vw, 20rem);
+  letter-spacing: 0rem;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 15px;
+  color: #00ff97;
+}
+
+.lineTitle {
+  width: 25%;
+  border-bottom: solid 1px #00ff97;
+}
+
+.lineAbout {
+  width: 100%;
+  border-bottom: solid 1px #00ff97;
+  padding-top: 20px;
+}
+
+.lineProject {
+  width: 75%;
+  border-bottom: solid 1px #00ff97;
+  padding-top: 20px;
+}
+
+.lineContact {
+  width: 25%;
+  border-bottom: solid 1px #00ff97;
+  padding-top: 20px;
+}
+
+//ABOUT
+.About {
+  width: 30%;
+  margin-bottom: 600px;
+}
+
+.About img {
+  width: 20%;
+}
+
+.About p {
+  padding-top: 20px;
+}
+
+.resume {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+// CONTACT
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-end;
+  margin-bottom: 300px;
+}
+
+.mail,
+.media {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: right;
+}
+
+.media a,
+.mail a {
+  margin-top: 20px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  width: 30%;
+  border-bottom: solid 1px grey;
+}
+
+//LENIS
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+//Projects
+
+.projects {
+  padding-bottom: 600px;
+}
+
+.work {
+  display: flex;
+  align-items: flex-end;
+}
+
+.work h5 {
+  font-size: clamp(10px, 2vw, 8rem);
+  font-family: "Josefin Sans", sans-serif;
+  align-self: flex-start;
+  padding-top: 70px;
+  color: #00ff97;
+}
+
+.work h3 {
+  font-size: clamp(50px, 10vw, 20rem);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.work a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  padding-top: 100px;
+}
+
+.work h4 {
+  font-size: clamp(10px, 2vw, 8rem);
+  font-family: "Josefin Sans", sans-serif;
+  color: #00ff97;
+  padding-left: 30px;
+}
