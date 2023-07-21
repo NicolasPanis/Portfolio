@@ -6,42 +6,13 @@ import logo from "../assets/logo.png";
 function Header() {
   return (
     <div className="Header">
-      <img className="logo" src={logo} alt="logo" />
       <div className="nav">
-        <Link
-          to="#contact"
-          onClick={() => {
-            const contact = document.getElementById("contact");
-            // eslint-disable-next-line no-unused-expressions
-            contact &&
-              contact.scrollIntoView({ behavior: "smooth", block: "end" });
-          }}
-        >
-          Projects
+        <Link className="home" to="/">
+          Home
         </Link>
-        <Link
-          to="#contact"
-          onClick={() => {
-            const contact = document.getElementById("contact");
-            // eslint-disable-next-line no-unused-expressions
-            contact &&
-              contact.scrollIntoView({ behavior: "smooth", block: "end" });
-          }}
-        >
-          About
-        </Link>
-        <Link
-          to="#contact"
-          onClick={() => {
-            const contact = document.getElementById("contact");
-            // eslint-disable-next-line no-unused-expressions
-            contact &&
-              contact.scrollIntoView({ behavior: "smooth", block: "end" });
-          }}
-        >
-          Contact
-        </Link>
+        <div className="lineHeader" />
       </div>
+      <img className="logo" src={logo} alt="logo" />
     </div>
   );
 }

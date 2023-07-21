@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 30px;
+  background-color: #22793d;
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.footer p {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transform: rotate(180deg);
+  text-align: center;
+  padding-top: 4px;
+  padding-left: 140px;
+}

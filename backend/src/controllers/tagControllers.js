@@ -1,10 +1,10 @@
 const models = require("../models");
 
 const browse = (req, res) => {
-  models.work
+  models.tag
     .findAll()
     .then(([rows]) => {
-      res.status(200).json(rows);
+      res.send(rows);
     })
     .catch((err) => {
       console.error(err);
@@ -13,13 +13,13 @@ const browse = (req, res) => {
 };
 
 const read = (req, res) => {
-  models.work
+  models.tag
     .find(req.params.id)
     .then(([rows]) => {
       if (rows[0] == null) {
         res.sendStatus(404);
       } else {
-        res.status(200).json(rows[0]);
+        res.send(rows[0]);
       }
     })
     .catch((err) => {
@@ -29,15 +29,19 @@ const read = (req, res) => {
 };
 
 const edit = (req, res) => {
-  const work = JSON.parse(req.body.json);
-  work.id = parseInt(req.params.id, 10);
-  models.work
-    .update(work)
+  const tag = req.body;
+
+  // TODO validations (length, format...)
+
+  tag.id = parseInt(req.params.id, 10);
+
+  models.tag
+    .update(tag)
     .then(([result]) => {
       if (result.affectedRows === 0) {
         res.sendStatus(404);
       } else {
-        res.status(204).json();
+        res.sendStatus(204);
       }
     })
     .catch((err) => {
@@ -47,17 +51,17 @@ const edit = (req, res) => {
 };
 
 const add = (req, res) => {
-  const work = JSON.parse(req.body.json);
-  console.log(req.body.json);
-  work.image_url = req.file.filename;
+  const tags = req.body;
 
-  models.work
-    .insert(work)
+  // TODO validations (length, format...)
+
+  models.tag
+    .insert(tags)
     .then(([result]) => {
       res
-        .location(`/works/${result.insertId}`)
+        .location(`/tags/${result.insertId}`)
         .status(201)
-        .json({ ...req.body, id: result.insertID });
+        .json({ id: result.insertId, technique: tags.technique });
     })
     .catch((err) => {
       console.error(err);
@@ -66,13 +70,13 @@ const add = (req, res) => {
 };
 
 const destroy = (req, res) => {
-  models.work
+  models.tag
     .delete(req.params.id)
     .then(([result]) => {
       if (result.affectedRows === 0) {
         res.sendStatus(404);
       } else {
-        res.status(204).json();
+        res.sendStatus(204);
       }
     })
     .catch((err) => {

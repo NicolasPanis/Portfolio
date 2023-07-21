@@ -34,6 +34,10 @@ const WorkManager = require("./WorkManager");
 models.work = new WorkManager();
 models.work.setDatabase(pool);
 
+const TagManager = require("./TagManager");
+
+models.tag = new TagManager();
+models.tag.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
