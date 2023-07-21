@@ -1,0 +1,23 @@
+.Header {
+  padding: 40px 40px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding-bottom: 10px;
+  list-style: none;
+  color: #353535;
+  text-decoration: none;
+  padding-right: 10px;
+  margin-right: 0;
+}
+
+.logo {
+  width: 30px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #3f2305;
+}

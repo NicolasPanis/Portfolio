@@ -1,0 +1,248 @@
+.aromalt {
+  background-color: #d0f2d0;
+  height: 100%;
+}
+
+.aromalt h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: clamp(50px, 12vw, 20rem);
+  color: #353535;
+  padding-bottom: 100px;
+}
+.headerAromalt {
+  width: 75%;
+  height: 800px;
+  background-color: #ffffff;
+  background-image: url(http://www.transparenttextures.com/patterns/absurdity.png);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -120px;
+}
+
+.mainAromalt {
+  color: #353535;
+}
+
+.mainAromalt h3 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 250px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(30px, 5vw, 20rem);
+  font-weight: 300;
+}
+
+.headerMain {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.headerMain h4 {
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+.picture {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aromalt_maquette {
+  width: 100%;
+}
+
+.aromalt_link {
+  margin-top: 20px;
+  list-style: none;
+  width: 10rem;
+  background-color: #353535;
+  height: 40px;
+  border-radius: 20px;
+  color: #22793d;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 100px;
+}
+
+.picture h4 {
+  padding-top: 100px;
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.visit a {
+  --color: #22793d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-block;
+  width: 10rem;
+  height: 2.6em;
+  line-height: 2.5em;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color);
+  text-align: center;
+}
+
+.visit a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #22793d;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.visit a:hover {
+  color: #fff;
+}
+
+.visit a:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.visit a:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.visit {
+  padding-bottom: 100px;
+}
+
+.main {
+  padding-top: 200px;
+}
+
+.panel.align-top {
+  align-items: flex-start;
+}
+
+.panel h1 {
+  font-size: 1.8em;
+  color: white;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.panel.description {
+  padding-bottom: 60px;
+}
+
+.panel p,
+.panel li {
+  color: black;
+  font-weight: 400;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0.3em 0 1em 0;
+}
+
+.panel p strong,
+.panel li strong {
+  color: white;
+  font-weight: 400;
+}
+
+.panel p code,
+.panel li code {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.panel li {
+  margin: 0;
+}
+
+.blue {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue img {
+  height: 100%;
+}
+
+.red img {
+  width: 70%;
+}
+
+.red {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: #ffffff;
+  background-image: url(http://www.transparenttextures.com/patterns/absurdity.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: solid 2px #22793d;
+}
+
+.panel {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  margin-left: 5%;
+}
+
+.picture h4 {
+  color: #353535;
+}
